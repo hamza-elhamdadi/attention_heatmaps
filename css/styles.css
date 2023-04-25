@@ -1,0 +1,4 @@
+@media screen and (max-width: 900px) {
+	#main {display:none !important;}
+	body::before {content: "Please do this survey on a larger screen.";}
+}

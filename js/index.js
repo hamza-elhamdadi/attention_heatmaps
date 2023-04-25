@@ -1,5 +1,4 @@
 
-var img = 'img/dataset5.png'
 // var clicks = [];
 
 function logClick(log) {
@@ -32,7 +31,7 @@ function start(imgUrl, bubbleR, blurR, selector){
  }
 
 // window.onload = function(){
-//     start(img, 30, 70)
+//     start('img/dataset5.png', 30, 70)
 //     // console.log('tests')
     
 // }

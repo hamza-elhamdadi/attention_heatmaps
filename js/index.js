@@ -5,7 +5,7 @@ function logClick(log) {
     clicks.push(log);
 }
 
-function start(imgUrl, bubbleR, blurR, selector){
+function createBubbleViewInterface(imgUrl, bubbleR, blurR, selector){
     let canvasId = 'mainCanvas';
 
     let qDiv = selector ? d3.select(`#${selector.questionId}`) : d3.select(`#main`)
@@ -24,7 +24,7 @@ function start(imgUrl, bubbleR, blurR, selector){
     document.getElementById('canvasCol')
     .append(canvas)
 
-    console.log(img)
+    // console.log(img)
     
     bv.setup(imgUrl, canvasId, bubbleR, blurR, logClick)
     

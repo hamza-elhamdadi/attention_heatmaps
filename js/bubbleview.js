@@ -135,6 +135,8 @@ var bv = (function() {
       ctx.drawImage(blurred, 0, 0, newSize.width, newSize.height);
     }
     image.src = imgUrl;
+    image.setAttribute('crossOrigin', 'Anonymous');
+  
   }
 
 

@@ -1,8 +1,12 @@
 
-// var clicks = [];
+var clicks = [];
 
 function logClick(log) {
-    clicks.push(log);
+
+    clicks.push({
+        x: log.x,
+        y: log.y
+    });
 }
 
 function createBubbleViewInterface(imgUrl, bubbleR, blurR, selector){

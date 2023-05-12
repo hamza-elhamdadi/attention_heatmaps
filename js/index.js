@@ -18,8 +18,8 @@ function createBubbleViewInterface(imgUrl, bubbleR, blurR, selector){
 
     let canvas = document.createElement('canvas');
     canvas.id = canvasId;
-    canvas.width = 1000;
-    canvas.height = 800;
+    canvas.width = '100%';
+    canvas.height = 0.8*canvas.width;
 
     main_row.append('div')
         .attr('class', 'mx-auto col-8')

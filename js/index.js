@@ -2,10 +2,9 @@
 var clicks = [];
 
 function logClick(log) {
-
     clicks.push({
-        x: log.x,
-        y: log.y
+        x: log.cx,
+        y: log.cy
     });
 }
 

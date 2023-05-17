@@ -13,14 +13,14 @@ function createBubbleViewInterface(imgUrl, bubbleR, blurR, selector){
 
     let qDiv = selector ? d3.select(`#${selector.questionId}`) : d3.select(`#main`)
 
-    let main_row = qDiv.append('div').attr('class', 'row')
+    // let main_row = qDiv.append('div').attr('class', 'row')
 
     let canvas = document.createElement('canvas');
     canvas.id = canvasId;
     canvas.width = 800;
     canvas.height = 640;
 
-    main_row.append('div')
+    qDiv.append('div')
         .attr('class', 'mx-auto col-8')
         .attr('id', 'canvasCol')
 
